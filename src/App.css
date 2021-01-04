@@ -3,13 +3,12 @@
 }
 
  .body{
-   background-color: #fbe9eb;
    height:100vh;
  }
 
  .Header{
-  background-color: #ecfdf0;
-  height:10%;
+  background-color: #002651;
+  height:7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +16,7 @@
 
  .Title{
    padding-left: 5%;
+   color: white;
  }
 
  .UserProfileLogo{
@@ -24,19 +24,19 @@
  }
 
  .footer{
-  background-color: #ecfdf0;
-  height:10%;
+  background-color:#002651;
+  height:7%;
   display: flex;
   align-items: center;
  }
 
  .copyright{
   margin: auto auto;
+  color: white;
  }
 
  .main{
-  background-color: #ecfdf0;
-  height:79.6%;
+  height:85.7%;
   width: 80%;
   margin: 0 auto;
   flex: 1;
@@ -61,6 +61,7 @@
    height:100px;
    width: 100px;
    padding-left: 20%;
+   cursor: pointer;
  }
 
  .userDetails{

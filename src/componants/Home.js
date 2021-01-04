@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../App.css';
-import axios from 'axios';
 
-export default function Home() {
-
-    const [candidates , setCandidates]= useState([]);
-
-    const getData= async ()=>{ 
-
-        let response= await axios.get('https://s3-ap-southeast-1.amazonaws.com/he-public-data/users49b8675.json');
-        setCandidates(response.data);
-    }
-
-    useEffect(()=>{
-        getData();
-    },[]);
+export default function Home({candidates}) {
     console.log(candidates);
 
     return (
@@ -26,13 +13,14 @@ export default function Home() {
         <div className="main">
         {
          candidates.map((candidate)=>{
-            return <div className="Container">
-                 <div className="userImage"><img alt="User" src={candidate.Image}></img></div>
+             return <div className="Container">
+                 <div className="userImage"><Link to={`/CandidateProfile/${candidate.id}`}><img alt="User" src={candidate.Image}></img></Link></div>
                  <div className="userDetails">
                  <div>User Name: ${candidate.name}</div>
                  <div>User ID: ${candidate.id}</div>
                  </div>
             </div>
+            
          })
         }  
         </div>
