@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+ .body{
+   background-color: #fbe9eb;
+   height:100vh;
+ }
+
+ .Header{
+  background-color: #ecfdf0;
+  height:10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .Title{
+   padding-left: 5%;
+ }
+
+ .UserProfileLogo{
+  padding-right: 5%;
+ }
+
+ .footer{
+  background-color: #ecfdf0;
+  height:10%;
+  display: flex;
+  align-items: center;
+ }
+
+ .copyright{
+  margin: auto auto;
+ }
+
+ .main{
+  background-color: #ecfdf0;
+  height:79.6%;
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
+  overflow: auto;
+  border: 1px solid grey;
+ }
