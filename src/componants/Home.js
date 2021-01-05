@@ -18,6 +18,11 @@ export default function Home({candidates}) {
           }
     }
 
+    const unset = () =>{
+        setSearchedCandidate('');
+        setCount(count+1);
+    }
+
     useEffect(()=>{
         console.log("you clicked search!");
     },[count]);
@@ -26,7 +31,7 @@ export default function Home({candidates}) {
     return (
         <div className="body">
         <div className="Header">
-        <div className="Title"><Link to={'/'}>Job Portal</Link></div>
+        <div className="Title" onClick={unset}><Link to={'/'}>Job Portal</Link></div>
         <div className="searchContainer">
         <div className="searchIcon"><input type='text' placeholder='Enter user name' value={userNameSearch} onChange={(e)=>setUserName(e.target.value)}/><span className="search" onClick={search}><img src="ic_search.png" alt='search'></img></span></div>
         <div className="UserProfileLogo"><img alt="User profile" src="ic_user.png"></img></div>
