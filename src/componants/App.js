@@ -8,6 +8,8 @@ import '../App.css';
 const App =() => {
 
   const [candidates , setCandidates]= useState([]);
+  const [shortListed , setShortListed]= useState(0);
+  const [rejected , setRejected]= useState(0);
 
     const getData= async ()=>{ 
 
@@ -21,8 +23,8 @@ const App =() => {
   return (
     <div className="App">
       <Switch>
-          <Route exact path='/' component={ ()=> <Home candidates={candidates}/>}/>
-          <Route exact path='/CandidateProfile/:id' component={ ()=> <CandidateProfile candidates={candidates}/>}/>
+          <Route exact path='/' component={ ()=> <Home candidates={candidates} shortListed={shortListed} rejected={rejected} setShortListed={setShortListed} setRejected={setRejected} />}/>
+          <Route exact path='/CandidateProfile/:id' component={ ()=> <CandidateProfile candidates={candidates} shortListed={shortListed} rejected={rejected} setShortListed={setShortListed} setRejected={setRejected}/>}/>
       </Switch>
     </div>
   );

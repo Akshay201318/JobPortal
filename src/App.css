@@ -1,6 +1,10 @@
 .body{
    height:100vh;
+   background-color: #DEE9FD;
  }
+
+
+ /*********** Header styling start here **************/
 
  .Header{
   background-color: #002651;
@@ -25,6 +29,51 @@
   padding-right: 5%;
  }
 
+ .searchContainer{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.searchIcon{
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.search{
+  background-color: white;
+  border: none;
+  height: 69%;
+  cursor: pointer;
+}
+
+.searchedCandidate{
+  height: 40%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.short{
+  color: lightgreen;
+  text-align: center;
+  align-self: center;
+}
+
+.Reject{
+ color: rgb(221, 87, 87);
+ text-align: center;
+ align-self: center;
+}
+
+/*********** Header styling ends here **************/
+
+
+
+/*********** footer styling start here **************/
  .footer{
   background-color:#002651;
   height:7%;
@@ -36,6 +85,13 @@
   margin: auto auto;
   color: white;
  }
+
+
+ /*********** footer styling ends here **************/
+
+
+
+ /*********** Main styling start here **************/
 
  .main{
   height:85.7%;
@@ -72,16 +128,19 @@
    flex-direction: column;
  }
 
+ /*********** Main styling ends here **************/
+
+
+ /*********** Profile page styling start here **************/
+
  .profileContainer{
   display:flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  margin-top: 5%;
-  height:50%;
+  height:86%;
   width:80%;
   align-items: center;
-  padding: 2%;
  }
  
  .profileDetails{
@@ -89,35 +148,32 @@
  }
 
  .profilePicture img{
-  padding-left: 20%;
-  height: 80%;
-  width: 60%;
+  height: 300px;
+  width: 300px;
  }
 
- .searchContainer{
+ .shortreject{
+   width: 20em;
    display: flex;
-   width: 40%;
    justify-content: space-around;
  }
 
- .searchIcon{
-   display: flex;
-   align-items: center;
-   border: none;
- }
+ .shortP{
+  color: rgb(71, 189, 71);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
- .search{
-   background-color: white;
-   border: none;
-   height: 69%;
-   cursor: pointer;
- }
+.RejectP{
+ color: rgb(221, 87, 87);
+ font-size: 20px;
+ font-weight: 600;
+ cursor: pointer;
+}
 
- .searchedCandidate{
-   height: 40%;
-   width: 80%;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
 
- }
+
+ /*********** Profile picture styling start here **************/
+
+ 
