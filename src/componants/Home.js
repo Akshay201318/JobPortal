@@ -9,13 +9,17 @@ export default function Home({candidates, shortListed, rejected, setShortListed,
 
     const search = () =>{
           if(userNameSearch !== ''){
-           console.log("Hello!!!!!!!!!!")
-           console.log(userNameSearch);
            setSearchedCandidate(candidates.find((candidate)=> candidate.name === userNameSearch));
            setCount(count+1);
            setUserName('');
           }
     }
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+          search();
+        }
+      }
 
     const unset = () =>{
         setSearchedCandidate('');
@@ -34,7 +38,7 @@ export default function Home({candidates, shortListed, rejected, setShortListed,
         <div className="searchContainer">
         <div className="short">Shortlisted {shortListed}</div>
         <div className="Reject">Rejected {rejected}</div>
-        <div className="searchIcon"><input className="searchIcon" type='text' placeholder='Username.....' value={userNameSearch} onChange={(e)=>setUserName(e.target.value)}/><span className="search" onClick={search}><img  className=" searchImg" src="ic_search.png" alt='search'></img></span></div>
+        <div className="searchIcon"><input className="searchIcon" type='text' placeholder='Username.....' value={userNameSearch} onKeyDown={handleKeyDown} onChange={(e)=>setUserName(e.target.value)}/><span className="search" onClick={search}><img  className=" searchImg" src="ic_search.png" alt='search'></img></span></div>
         <div className="UserProfileLogo"><img alt="User profile" src="ic_user.png"></img></div>
         </div>
         </div>
