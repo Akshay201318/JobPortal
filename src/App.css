@@ -232,14 +232,14 @@
 
  .shortP{
   color: rgb(71, 189, 71);
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   cursor: pointer;
 }
 
 .RejectP{
  color: rgb(221, 87, 87);
- font-size: 2em;
+ font-size: 1.5em;
  font-weight: 600;
  cursor: pointer;
 }
