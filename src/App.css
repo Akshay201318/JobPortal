@@ -14,6 +14,7 @@
   align-items: center;
  }
 
+ @media screen and (min-width: 482px){
  .Title{
    padding-left: 5%;
    color: white;
@@ -44,7 +45,7 @@
 .search{
   background-color: white;
   border: none;
-  height: 69%;
+  height: 61%;
   cursor: pointer;
 }
 
@@ -67,6 +68,77 @@
  color: rgb(221, 87, 87);
  text-align: center;
  align-self: center;
+}
+ }
+
+
+@media screen and (max-width: 480px){
+
+  .Title{
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+  }
+ 
+  .Title a{ 
+    text-decoration: none;
+    color: white;
+  }
+ 
+  .UserProfileLogo{
+   padding-right: 5%;
+  }
+ 
+  .searchContainer{
+   display: flex;
+   width: 80%;
+   justify-content: space-between;
+ }
+ 
+ .searchIcon{
+   display: flex;
+   align-items: center;
+   width: 60px;
+   border: none;
+   font-size: 12px;
+ }
+ 
+ .search{
+   background-color: white;
+   border: none;
+   height: 57%;
+   cursor: pointer;
+ }
+ 
+ .searchImg{
+   height: 10px;
+   width: 10px;
+   padding: 2px;
+ }
+ .searchedCandidate{
+   height: 40%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ 
+ }
+ 
+ .short{
+   color: lightgreen;
+   text-align: center;
+   align-self: center;
+   font-size: 12px;
+ }
+ 
+ .Reject{
+  color: rgb(221, 87, 87);
+  text-align: center;
+  align-self: center;
+  font-size: 12px;
+ }
+
 }
 
 /*********** Header styling ends here **************/
@@ -160,7 +232,7 @@
 
  .shortP{
   color: rgb(71, 189, 71);
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 600;
   cursor: pointer;
 }
