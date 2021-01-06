@@ -239,7 +239,7 @@
 
 .RejectP{
  color: rgb(221, 87, 87);
- font-size: 20px;
+ font-size: 1em;
  font-weight: 600;
  cursor: pointer;
 }
